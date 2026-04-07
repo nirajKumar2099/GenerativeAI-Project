@@ -16,9 +16,11 @@ if not mistral_key:
 chat = ChatMistralAI(
     model="mistral-small-latest",
     api_key=mistral_key,
-    temperature=0.2,
+    temperature=0.2, # varies between 0 and 1, higher values make output more random,
+    #use lower values for more focused and deterministic output.   
+    max_tokens=20
 )
-response = chat.invoke("What is the capital of France?")
-print(response)
+response = chat.invoke("Write a poem on mistral small latest model.")
+print(response.content)
 
 
