@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 #opensource hugging face model, you can also use HuggingFacePipeline for local model,
-# but here we are using HuggingFaceEndpoint to call the model via API,
+# but here we are using *********HuggingFaceEndpoint to call the model via API*****************,
 # which is not free to use, but you can create local model in Hugging Face and use it for free.
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
