@@ -14,4 +14,7 @@ model = ChatHuggingFace(llm=llm)
 response = model.invoke("What is my name?")
 
 print(response.content)
-# **Note: The HuggingFaceEndpoint is a wrapper around the Hugging Face Inference API, which allows you to call Hugging Face models directly from your code. You need to have an access token from Hugging Face to use this service, which you can set in your .env file as shown above.*  
+# **Note: The HuggingFaceEndpoint is a wrapper around the Hugging Face Inference API,
+# which allows you to call Hugging Face models directly from your code. 
+# You need to have an access token from Hugging Face to use this service,
+# which you can set in your .env file as shown above.*  
